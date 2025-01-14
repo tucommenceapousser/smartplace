@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appareil Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Gestion des appareils</h1>
+        <div id="auth">
+            <form id="login-form">
+                <h2>Connexion</h2>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+        <div id="dashboard" style="display: none;">
+            <h2>Bienvenue !</h2>
+            <button id="logout-btn">Se déconnecter</button>
+            <h3>Ajouter un appareil</h3>
+            <form id="device-form">
+                <input type="text" id="device-name" placeholder="Nom de l'appareil" required>
+                <button type="submit">Ajouter</button>
+            </form>
+            <ul id="device-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
